@@ -4,15 +4,6 @@ body {
     text-align: center;
 }
 
-main {
-    display: flex;
-    gap: 30px;               
-    justify-content: flex-start; 
-    padding: 20px 40px;      
-    box-sizing: border-box;
-    flex-wrap: nowrap;       
-}
-
 .GameName{
     color: red;
     font-weight: bold;
@@ -24,8 +15,6 @@ main {
     display: flex;
     justify-content: center;
     gap: 30px;
-    position: relative; 
-    top: 0;
     width: 100%;
 }
 
@@ -35,10 +24,10 @@ main {
     background-color: grey;
     padding: 15px 25px;
     text-decoration: none;
-    align-items: center; 
+    align-items: center;
     display: flex;
-    min-width: 140px;       
-    height: 50px;  
+    min-width: 140px;
+    height: 50px;
     border-radius: 8px;
     font-weight: bold;
     box-sizing: border-box;
@@ -87,35 +76,36 @@ main {
     gap: 20px;
     width: 100%;
     position: relative;
-    margin-top: 0px;
+    margin-top: 150px;
 }
 
-.newsAndInfoScrollBar{
+.newsAndInfoScrollBar {
+    width: 600px;
+    max-width: 70vw;
     background-color: white;
     padding: 20px;
-    margin: 50px auto 40px auto;
-    width: 80%;
-    max-width: 700px;
-    height: 350px;             
-    overflow-y: scroll; 
+    height: 350px;
+    overflow-y: auto;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: left;
+    margin-top: 30px;
+    margin-left: 430px;
+
 }
 
-.newGameBar{
+.newGameBar {
+    width: 300px;
     background-color: white;
     padding: 15px;
     display: flex;
-    position: relative;
+    margin-top: -350px;
+    margin-left: 1150px;
     flex-direction: column;
-    align-items: flex-start; 
-    margin-top: 80px;
-    margin-bottom: 90px;
-    margin-left: -320px;
+    align-items: center;
+    justify-content: center;
 }
-
 .newGameBar p{
     font-size: 20px;
     font-weight: 600;
@@ -125,40 +115,26 @@ main {
     main {
         flex-direction: column;
         align-items: center;
-        padding: 20px 10px;
+    }
+
+    .newsAndInfoScrollBar {
+        width: 95%;
+        height: 250px;
     }
 
     .newGameBar {
         width: 95%;
-        padding: 10px;
         margin-top: 20px;
-        text-align: center;
-        flex-direction: column;      
-        justify-content: center;    
-        align-items: center;       
     }
 
     .navbar {
         flex-direction: column;
         gap: 10px;
-        padding: 10px 0;
     }
 
     .navbar a {
         min-width: auto;
         width: 100%;
         justify-content: center;
-    }
-
-    .newsAndInfoScrollBar {
-        width: 95%;
-        height: 250px;
-        margin: 30px auto;
-    }
-
-    .homePageButton {
-        position: static; 
-        margin: 10px auto;
-        width: auto;
     }
 }
