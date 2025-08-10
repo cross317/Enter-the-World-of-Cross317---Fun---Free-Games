@@ -131,7 +131,9 @@ main {
         width: 95%;
         padding: 10px;
         margin-top: 20px;
-        display: inline;
+        display: flex;
+        margin-left: 400px;
+        margin-bottom: 200px;
     }
 
     .navbar {
